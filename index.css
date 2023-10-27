@@ -1,0 +1,64 @@
+/* starting with empty padding and no margin in body*/
+body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background: #0a0200;
+    color: white;
+    text-align: center;
+}
+
+/* styling the header*/
+header{
+    background-color: rgb(37, 11, 0);
+    display: flex;
+    padding: 0 5px 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size:x-large;
+    color: white;
+}
+
+/* navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+/*styling the buttons*/
+nav ul li{
+    border: 1px solid chocolate;
+    padding: 7px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover{
+    background-color: rgba(151, 67, 14, 0.507);
+    cursor: pointer;
+}
+
+.slider {
+    margin: auto;
+    height: 350px;
+    border: 3.5px dashed chocolate;
+
+    /* making the slider parent of all 5 images */
+    display: flex;
+
+    /* adding horizontal scroll */
+    overflow-x: scroll;
+}
+
+/* hiding the scrollbar */
+.slider::-webkit-scrollbar {
+    display: none;
+}
